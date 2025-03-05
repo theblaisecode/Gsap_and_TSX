@@ -64,8 +64,6 @@ npm run build
 ## 📜 License
 This project is licensed under the MIT License.
 
-<br/>
-
 ## 👥 Author  
 - GitHub - [@theblaisecode](https://github.com/theblaisecode)  
 - Twitter - [@theblaisecode](https://twitter.com/theblaisecode)  
