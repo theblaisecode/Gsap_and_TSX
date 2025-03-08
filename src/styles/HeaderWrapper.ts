@@ -1,17 +1,13 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
-  .card {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(23, 23, 25, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-  }
-
-  
-  padding: 2rem;
-  background: yellow;
+  backdrop-filter: blur(1.6rem) saturate(180%);
+  -webkit-backdrop-filter: blur(1.6rem) saturate(180%);
+  background-color: rgba(23, 23, 25, 0.75);
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom: 0.1rem solid var(--primary);
+  padding: 3rem 0;
 
   .headerContent {
     display: flex;

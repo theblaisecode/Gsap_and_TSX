@@ -1,6 +1,7 @@
 :root {
   --color: rgba(255, 255, 255, 0.87);
   --background: #171719;
+  --primary: #dc3435;
 }
 
 * {
@@ -16,6 +17,8 @@ html {
 body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
+  background: var(--background);
+  color: var(--color);
   overflow: hidden;
 }
 
