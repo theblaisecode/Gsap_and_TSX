@@ -26,6 +26,10 @@ const HeaderWrapper = styled.header`
     width: 3rem;
     height: 3rem;
   }
+
+  .logo span {
+    font-weight:500;
+  }
 `;
 
 export default HeaderWrapper;
