@@ -1,10 +1,14 @@
 import HeaderWrapper from "../styles/HeaderWrapper.ts";
+import logo from "../assets/TeddyTheCreator.png";
 
 function Header() {
   return (
     <HeaderWrapper>
       <div className="container">
-        <h3>This is the header</h3>
+        <div className="logo">
+          <img src={logo} alt="TeddyTheCreator logo" />
+          TeddyTheCreator
+        </div>
       </div>
     </HeaderWrapper>
   );
