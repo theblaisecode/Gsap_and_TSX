@@ -10,7 +10,7 @@ function Header() {
           <div className="contentTop">
             <div className="logo">
               <img src={logo} alt="TeddyTheCreator logo" />
-              TeddyTheCreator
+              <span>TeddyTheCreator</span>
             </div>
           </div>
 

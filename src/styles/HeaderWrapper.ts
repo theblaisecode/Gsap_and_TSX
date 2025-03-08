@@ -19,6 +19,7 @@ const HeaderWrapper = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
   }
 
   .logo img {
