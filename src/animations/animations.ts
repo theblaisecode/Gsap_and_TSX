@@ -9,9 +9,5 @@ export const slideRight = (target: string | HTMLElement | null) => {
 export const headerFade = (target: string | HTMLElement | null) => {
   if (!target) return;
 
-  // gsap.fromTo(
-  //   target,
-  //   { y: -200, opacity: 0 },
-  //   { y: 0, opacity: 1, duration: 3 }
-  // );
+  gsap.fromTo(target, { opacity: 0 }, { opacity: 1, duration: 2 });
 };

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const HeaderWrapper = styled.header`
   backdrop-filter: blur(1.6rem) saturate(180%);
   -webkit-backdrop-filter: blur(1.6rem) saturate(180%);
-  background-color: rgba(23, 23, 25, 0.75);
+  background-color: var(--darkBg);
   border-bottom-left-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
   border-bottom: 0.1rem solid var(--primary);
@@ -68,12 +68,18 @@ const HeaderWrapper = styled.header`
   }
 
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    border-bottom: none;
+
     .container {
-      width: 75%;
+      width: 90%;
     }
 
     .container2 {
       width: 85%;
+    }
+
+    .headerContent {
+      align-items: flex-start;
     }
 
     .mobileNav {
@@ -84,7 +90,7 @@ const HeaderWrapper = styled.header`
       font-size: 2rem;
       color: var(--textPrimary);
     }
-
+    /*
     .allLink {
       position: fixed;
       right: -100%;
@@ -103,8 +109,8 @@ const HeaderWrapper = styled.header`
       flex-direction: column;
       gap: 3.5rem;
       justify-content: flex-start;
-      padding: 13.3rem 0 0 0;
-      margin-top: -3rem;
+      padding: 7rem 0 0 0;
+      border-left: 0.1rem solid var(--primary);
     }
 
     nav a {
@@ -125,7 +131,7 @@ const HeaderWrapper = styled.header`
       margin-top: 8rem;
       margin-bottom: 3rem;
       text-align: center;
-    }
+    } */
   }
 `;
 

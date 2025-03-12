@@ -2,6 +2,8 @@
   --color: rgba(255, 255, 255, 0.87);
   --colorFade: rgba(255, 255, 255, 0.26);
   --background: #171719;
+  /* --background: #03050e; */
+  --darkBg: #080a14bf;
   --primary: #dc3435;
 }
 
@@ -50,3 +52,5 @@ a {
   white-space: nowrap;
   overflow: hidden;
 }
+
+
