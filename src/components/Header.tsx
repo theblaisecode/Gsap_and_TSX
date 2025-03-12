@@ -29,9 +29,15 @@ function Header() {
             </a>
           </div>
 
-          <div className="contentBottom">
-            <NavLinks />
+          <div className="navigation">
+            <div className={isMobile ? "allLink active" : "allLink"}>
+              <NavLinks />
+            </div>
           </div>
+
+          {/* <div className="contentBottom">
+            <NavLinks />
+          </div> */}
 
           {/* Mobile Nav */}
           <button className="btn mobileNav" onClick={toggleMobileMenu}>

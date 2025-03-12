@@ -78,19 +78,15 @@ const HeaderWrapper = styled.header`
       width: 85%;
     }
 
-    .headerContent {
-      align-items: flex-start;
-    }
-
     .mobileNav {
       display: block;
       position: absolute;
-      top: 2rem;
+      /* top: 2rem;*/
       right: 5%;
       font-size: 2rem;
       color: var(--textPrimary);
     }
-    /*
+
     .allLink {
       position: fixed;
       right: -100%;
@@ -109,6 +105,7 @@ const HeaderWrapper = styled.header`
       flex-direction: column;
       gap: 3.5rem;
       justify-content: flex-start;
+      align-items:flex-start;
       padding: 7rem 0 0 0;
       border-left: 0.1rem solid var(--primary);
     }
@@ -131,7 +128,7 @@ const HeaderWrapper = styled.header`
       margin-top: 8rem;
       margin-bottom: 3rem;
       text-align: center;
-    } */
+    }
   }
 `;
 
