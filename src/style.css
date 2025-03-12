@@ -1,5 +1,6 @@
 :root {
   --color: rgba(255, 255, 255, 0.87);
+  --colorFade: rgba(255, 255, 255, 0.26);
   --background: #171719;
   --primary: #dc3435;
 }
