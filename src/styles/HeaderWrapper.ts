@@ -78,8 +78,8 @@ const HeaderWrapper = styled.header`
     background: var(--primary);
     padding: 1rem 3rem;
     border-radius: 0.2rem;
-    color: var(--darkBg);
-    font-weight: 600;
+    color: var(--textLight);
+    font-weight: 00;
   }
 
   /* -------- Mobile Nav -------- */
