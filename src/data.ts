@@ -13,25 +13,19 @@ export const navLinks: {
   {
     id: 2,
     name: "About",
-    url: "#about",
+    url: "/about",
     ariaLabel: "Link to about page",
   },
   {
     id: 3,
     name: "Designs",
-    url: "#designs",
+    url: "/designs",
     ariaLabel: "Link to designs page",
   },
   {
     id: 4,
-    name: "Experience",
-    url: "#experience",
-    ariaLabel: "Link to experience page",
-  },
-  {
-    id: 5,
     name: "Contact",
-    url: "#contact",
+    url: "/contact",
     ariaLabel: "Link to contact page",
   },
 ];

@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
-  backdrop-filter: blur(1.6rem) saturate(180%);
-  -webkit-backdrop-filter: blur(1.6rem) saturate(180%);
-  background-color: var(--darkBg);
-  border-bottom-left-radius: 1.2rem;
-  border-bottom-right-radius: 1.2rem;
-  border-bottom: 0.1rem solid var(--primary);
   padding: 3rem 0;
 
   .headerContent {
@@ -19,9 +13,9 @@ const HeaderWrapper = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 200;
     cursor: pointer;
-    font-weight: 700;
     transition: 0.4s;
   }
 
@@ -30,13 +24,17 @@ const HeaderWrapper = styled.header`
     transition: all 0.4s;
   }
 
-  .logo img {
-    width: 3rem;
-    height: 3rem;
-  }
-
   .logo span {
     font-weight: 500;
+  }
+
+  .logo .highlight {
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    background: var(--primary);
   }
 
   nav {
@@ -46,17 +44,42 @@ const HeaderWrapper = styled.header`
   }
 
   nav a {
-    color: var(--colorFade);
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 0.1rem;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.4s;
+  }
+
+  nav a .active {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: transparent;
     transition: 0.4s;
   }
 
   nav a:hover,
-  nav a.active {
+  .activeNav {
     color: var(--primary);
-    transform: scale(1.2);
     transition: all 0.4s;
+  }
+
+  .activeNav:hover .active,
+  .activeNav .active {
+    background: var(--primary);
+    transition: all 0.4s;
+  }
+
+  .resume {
+    background: var(--primary);
+    padding: 1rem 3rem;
+    border-radius: 0.2rem;
+    color: var(--darkBg);
+    font-weight: 600;
   }
 
   /* -------- Mobile Nav -------- */
@@ -68,7 +91,7 @@ const HeaderWrapper = styled.header`
   }
 
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
-    border-bottom: none;
+    /* border-bottom: none; */
 
     .container {
       width: 90%;
@@ -105,9 +128,10 @@ const HeaderWrapper = styled.header`
       flex-direction: column;
       gap: 3.5rem;
       justify-content: flex-start;
-      align-items:flex-start;
-      padding: 7rem 0 0 0;
-      border-left: 0.1rem solid var(--primary);
+      align-items: flex-start;
+      padding: 7rem 2rem 0 0;
+      /* border-left: 0.1rem solid var(--primary); */
+      background: var(--darkBg);
     }
 
     nav a {

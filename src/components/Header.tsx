@@ -5,6 +5,7 @@ import NavLinks from "./NavLinks.tsx";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
 import { headerFade } from "../animations/animations.ts";
+import { Link } from "react-router-dom";
 
 function Header() {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -23,10 +24,9 @@ function Header() {
       <div className="container">
         <div className="headerContent">
           <div className="contentTop">
-            <a className="logo">
-              <img src={logo} alt="TeddyTheCreator logo" />
-              <span>TeddyTheCreator</span>
-            </a>
+            <Link to="/" className="logo">
+              <span>teddy</span>thecreator<span className="highlight"></span>
+            </Link>
           </div>
 
           <div className="navigation">
@@ -35,9 +35,13 @@ function Header() {
             </div>
           </div>
 
-          {/* <div className="contentBottom">
-            <NavLinks />
-          </div> */}
+          <a
+            className="btn resume"
+            href="https://drive.google.com/file/d/1tr48V3cwtuvgzfSVEGFZ_erPemcyqVCW/view"
+            target="_blank"
+            aria-label="Google drive link to teddythecreator's resume">
+            Download My Resume
+          </a>
 
           {/* Mobile Nav */}
           <button className="btn mobileNav" onClick={toggleMobileMenu}>
