@@ -9,9 +9,14 @@ const HeaderWrapper = styled.header`
     align-items: center;
   }
 
+  .contentTop {
+    /* Logo takes about 1/3 of the space */
+    flex: 1;
+  }
+
   .logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 1.8rem;
     font-weight: 200;
@@ -37,13 +42,34 @@ const HeaderWrapper = styled.header`
     background: var(--primary);
   }
 
+  .navigation {
+    /* Navigation takes about 2/3 of the space */
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .allLink {
+    flex: 1;
+  }
+
   nav {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    justify-content: space-between; /* Evenly space nav items */
+    width: 100%; /* Take full width of parent */
+    gap: 2rem; /* Minimum gap between items */
   }
 
-  nav a {
+  nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  nav ul a {
     font-weight: 300;
     letter-spacing: 0.1rem;
     transition: 0.4s;
@@ -54,7 +80,7 @@ const HeaderWrapper = styled.header`
     transition: 0.4s;
   }
 
-  nav a .active {
+  nav ul a .active {
     width: 0.6rem;
     height: 0.6rem;
     border-radius: 50%;
@@ -62,7 +88,7 @@ const HeaderWrapper = styled.header`
     transition: 0.4s;
   }
 
-  nav a:hover,
+  nav ul a:hover,
   .activeNav {
     color: var(--primary);
     transition: all 0.4s;
@@ -74,12 +100,19 @@ const HeaderWrapper = styled.header`
     transition: all 0.4s;
   }
 
+  div.btn {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .resume {
     background: var(--primary);
     padding: 1rem 3rem;
     border-radius: 0.2rem;
     color: var(--textLight);
-    font-weight: 00;
+    /* font-weight: 00; */
   }
 
   /* -------- Mobile Nav -------- */
@@ -88,6 +121,7 @@ const HeaderWrapper = styled.header`
     background: none;
     outline: none;
     border: none;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
@@ -129,22 +163,47 @@ const HeaderWrapper = styled.header`
       gap: 3.5rem;
       justify-content: flex-start;
       align-items: flex-start;
-      padding: 7rem 2rem 0 0;
+      padding: 9rem 4rem 0 0;
+      margin-top: -3rem;
       /* border-left: 0.1rem solid var(--primary); */
-      background: var(--darkBg);
+      background: var(--accent);
     }
 
-    nav a {
+    nav ul {
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    nav ul a {
       padding: 0 3.85rem;
       color: var(--textLight);
       border-bottom: 0;
-      border-right: 0.3rem solid transparent;
+      border-right: none;
+      border-left: 0.3rem solid transparent;
     }
 
-    nav a:hover,
+    nav ul a:hover,
     .activeNav {
       border-bottom: 0;
-      border-right: 0.3rem solid var(--textLight);
+      border-right: none;
+
+      border-left: 0.3rem solid var(--primary);
+    }
+
+    nav ul a .active {
+      display: none;
+    }
+
+    div.btn {
+      padding: 0 0 0 4rem;
+      align-items: flex-start;
+    }
+
+    .resume {
+      padding: 1rem 2rem;
+      font-size: 1.3rem;
     }
 
     .pageTitle {
