@@ -40,3 +40,21 @@ a {
   white-space: nowrap;
   overflow: hidden;
 }
+
+@media screen and (max-width: 950px), screen and (max-height: 550px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1440px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1628px) {
+  .container {
+    width: 80%;
+  }
+}
