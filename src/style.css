@@ -1,6 +1,7 @@
 :root {
   --textLight: rgba(255, 255, 255, 0.871);
   --accent: #212121;
+  --socials:#505050;
   --background: #121212;
   --darkBg: #080a14bf;
   --primary: #cc1100;
@@ -24,6 +25,7 @@ body {
   background: var(--background);
   color: var(--textLight);
   overflow: hidden;
+  font-weight: 300;
 }
 
 .container {
