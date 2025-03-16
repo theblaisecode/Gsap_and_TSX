@@ -67,5 +67,42 @@ export const Intro = () => {
 };
 
 export const Job = () => {
-  return <div>Job</div>;
+  return (
+    <div className="job">
+      <div className="jobContent">
+        <div className="contentTop">
+          <div className="details">
+            <div className="jobTitle">
+              <div className="heading">UX/UI & Product</div>
+              <h1>Designer</h1>
+            </div>
+
+            <div className="jobDescription">
+              I see digital products as living systems—where every element,
+              interaction, and detail work together to shape the user
+              experience. With over two years of experience in product design, I
+              don&apos;t just create interfaces—I design intuitive, functional,
+              and scalable solutions that bring ideas to life in a seamless,
+              user-friendly way.
+            </div>
+          </div>
+
+          <div className="tags">
+            <ul>
+              <li>UI &amp; Visual Design</li>
+              <li>UX Research</li>
+              <li>Brand Identity Design</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="contentBottom">
+          <div className="quote">
+            "A man that thinks all the time has nothing to think of except
+            thoughts"
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };

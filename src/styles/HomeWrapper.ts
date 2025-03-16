@@ -13,9 +13,8 @@ const HomeWrapper = styled.section`
   }
 
   /* Intro */
-
   .intro {
-    height: 70vh; /* or a specific pixel height */
+    height: 70vh;
     display: flex;
   }
 
