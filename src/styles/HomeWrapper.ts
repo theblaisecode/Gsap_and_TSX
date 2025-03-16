@@ -204,7 +204,7 @@ const HomeWrapper = styled.section`
   #teddy {
     width: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   #teddy img {
@@ -262,11 +262,11 @@ const HomeWrapper = styled.section`
   .jobContent .tags ul {
     list-style: none;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.2rem;
   }
 
   .jobContent .tags ul li {
-    padding-right: 1rem;
+    padding-right: 1.2rem;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--primary);
@@ -284,7 +284,7 @@ const HomeWrapper = styled.section`
   }
 
   .jobContent .contentBottom .quote {
-    border-left: 0.2rem solid var(--primary);
+    border-left: 0.3rem solid var(--primary);
     padding-left: 2rem;
     width: 52%;
   }
