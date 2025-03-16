@@ -5,9 +5,13 @@ import teddy from "../assets/TeddyTheCreator.png";
 function Home() {
   return (
     <HomeWrapper>
-      <Intro />
-      <img src={teddy} alt="Photo of teddythecreator" />
-      <Job />
+      <div className="container">
+        <div className="homeContent">
+          <Intro />
+          <img src={teddy} alt="Photo of teddythecreator" />
+          <Job />
+        </div>
+      </div>
     </HomeWrapper>
   );
 }
