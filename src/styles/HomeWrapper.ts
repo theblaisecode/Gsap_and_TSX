@@ -10,12 +10,35 @@ const HomeWrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8rem;
+    width: 100%;
   }
 
-  /* Intro */
-  .intro {
+  .homeContent .top {
+    flex: 1;
+  }
+
+  /* .homeContent .bottom {
+    flex: 3;
+    display: flex;
+    width: 100%;
+    justify-content: space-between !important;
+    align-self: center;
+  } */
+
+  .homeContent .bottom {
+    flex: 2.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* -------------------- Intro -------------------- */
+  #intro {
     height: 70vh;
     display: flex;
+    flex: 1;
   }
 
   .introContent {
@@ -58,19 +81,19 @@ const HomeWrapper = styled.section`
   .introContent .name {
     font-size: 6rem;
     font-weight: 600;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.5rem;
   }
 
   .introContent .name .alias {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     font-size: 2rem;
     letter-spacing: normal;
   }
 
   .introContent .name .alias .divider {
-    width: 8rem;
+    width: 10rem;
     height: 0.2rem;
     background: var(--primary);
   }
@@ -87,7 +110,8 @@ const HomeWrapper = styled.section`
     cursor: pointer;
   }
 
-  .introContent .contact {
+  .introContent .contactme {
+    width: 65%;
     margin-top: 2rem;
   }
 
@@ -117,7 +141,7 @@ const HomeWrapper = styled.section`
 
   .introContent .socials .socialLinks {
     display: flex;
-    gap: 1.2rem;
+    gap: 2rem;
     font-size: 1.2rem;
   }
 
@@ -143,7 +167,7 @@ const HomeWrapper = styled.section`
 
   .introContent .socials .socialLinks .platform {
     position: relative;
-    padding-right: 1.2rem;
+    padding-right: 2rem;
     opacity: 0.7;
   }
 
@@ -165,7 +189,7 @@ const HomeWrapper = styled.section`
 
   .introContent .contentBottom {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -173,7 +197,102 @@ const HomeWrapper = styled.section`
     font-size: 4rem;
     font-weight: 300;
     font-style: italic;
-    opacity: 0.2;
+    opacity: 0.1;
+  }
+
+  /* -------------------- Photograph -------------------- */
+  #teddy {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #teddy img {
+    display: block;
+  }
+  /* -------------------- Job -------------------- */
+  #job {
+    height: 65vh;
+    width: 40%;
+
+    .jobContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      align-items: flex-start;
+    }
+  }
+
+  .jobContent .contentTop {
+    gap: 4rem;
+  }
+
+  .jobContent .jobTitle,
+  .jobContent .contentTop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jobContent .jobTitle .heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
+
+  .jobContent .jobTitle h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+  }
+
+  .jobContent .jobDescription {
+    font-size: 1.4rem;
+  }
+
+  .jobContent .tags,
+  .jobContent .tags ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .jobContent .tags ul {
+    list-style: none;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .jobContent .tags ul li {
+    padding-right: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.5);
+  }
+
+  .jobContent .tags ul li:last-child {
+    border-right: none;
+  }
+
+  .jobContent .contentBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jobContent .contentBottom .quote {
+    border-left: 0.2rem solid var(--primary);
+    padding-left: 2rem;
+    width: 52%;
+  }
+
+  .jobContent .contentBottom .quote p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.5;
   }
 `;
 

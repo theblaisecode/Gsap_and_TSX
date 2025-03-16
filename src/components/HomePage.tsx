@@ -5,7 +5,7 @@ import { socials } from "../data.ts";
 
 export const Intro = () => {
   return (
-    <div className="intro">
+    <div id="intro">
       <div className="introContent">
         <div className="contentTop">
           <div className="introDeets">
@@ -23,9 +23,11 @@ export const Intro = () => {
               </div>
             </div>
 
-            <Link to="/contact" className="btn2 contact">
-              contact me
-            </Link>
+            <div className="contactme">
+              <Link to="/contact" className="btn2 contact">
+                contact me
+              </Link>
+            </div>
           </div>
 
           <div className="socials">
@@ -68,7 +70,7 @@ export const Intro = () => {
 
 export const Job = () => {
   return (
-    <div className="job">
+    <div id="job">
       <div className="jobContent">
         <div className="contentTop">
           <div className="details">
@@ -77,29 +79,32 @@ export const Job = () => {
               <h1>Designer</h1>
             </div>
 
-            <div className="jobDescription">
+            <p className="jobDescription">
               I see digital products as living systems—where every element,
               interaction, and detail work together to shape the user
               experience. With over two years of experience in product design, I
               don&apos;t just create interfaces—I design intuitive, functional,
               and scalable solutions that bring ideas to life in a seamless,
               user-friendly way.
-            </div>
+            </p>
           </div>
 
           <div className="tags">
             <ul>
               <li>UI &amp; Visual Design</li>
               <li>UX Research</li>
-              <li>Brand Identity Design</li>
+              <li>Brand Identity</li>
             </ul>
           </div>
         </div>
 
         <div className="contentBottom">
           <div className="quote">
-            "A man that thinks all the time has nothing to think of except
-            thoughts"
+            <p>
+              "A man that <span className="highlight">thinks</span> all the time
+              has nothing to <span className="highlight">think</span> of except
+              thoughts"
+            </p>
           </div>
         </div>
       </div>

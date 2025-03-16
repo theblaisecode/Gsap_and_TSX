@@ -66,7 +66,7 @@ const HeaderWrapper = styled.header`
     display: flex;
     flex: 1;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 1rem;
   }
 
   nav ul a {
@@ -95,13 +95,14 @@ const HeaderWrapper = styled.header`
   }
 
   .activeNav:hover .active,
+  nav ul a:hover .active,
   .activeNav .active {
     background: var(--primary);
     transition: all 0.4s;
   }
 
   div.btn {
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -188,7 +189,6 @@ const HeaderWrapper = styled.header`
     .activeNav {
       border-bottom: 0;
       border-right: none;
-
       border-left: 0.3rem solid var(--primary);
     }
 

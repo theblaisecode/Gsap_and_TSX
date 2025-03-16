@@ -7,9 +7,17 @@ function Home() {
     <HomeWrapper>
       <div className="container">
         <div className="homeContent">
-          <Intro />
-          <img src={teddy} alt="Photo of teddythecreator" />
-          <Job />
+          <div className="top">
+            <Intro />
+          </div>
+
+          <div className="bottom">
+            <div id="teddy">
+              <img src={teddy} alt="Photo of teddythecreator" />
+            </div>
+
+            <Job />
+          </div>
         </div>
       </div>
     </HomeWrapper>
