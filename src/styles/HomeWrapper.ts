@@ -294,6 +294,10 @@ const HomeWrapper = styled.section`
     font-weight: 400;
     opacity: 0.5;
   }
+
+  .jobContent .contentBottom .quote .highlight {
+    color: var(--primary);
+  }
 `;
 
 export default HomeWrapper;
