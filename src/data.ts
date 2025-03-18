@@ -63,3 +63,54 @@ export const socials: {
     title: "LinkedIN",
   },
 ];
+
+export type TestimonialSettings = {
+  dots: boolean;
+  infinite: boolean;
+  slidesToShow: number;
+  slidesToScroll: number;
+  autoplay: boolean;
+  autoplaySpeed: number;
+  pauseOnHover: boolean;
+};
+
+export const testimonial: {
+  id: number;
+  name: string;
+  job: string;
+  img: string;
+  description: string;
+}[] = [
+  {
+    id: 1,
+    name: "Amaka N.",
+    job: "FrontEnd Developer",
+    img: "",
+    description:
+      "Teddy is an exceptional designer. Working with him has been a major plus to me and my team. He always has new inspiring ideas and when he sets his mind on something he’s always sure to go all out in accomplishing it.",
+  },
+  {
+    id: 2,
+    name: "J Grand",
+    job: "Senior Graphics Designer",
+    img: "",
+    description:
+      "Working with Teddy has been an amazing experience, his design etiquettes are top notch and i dare say on par with any top designer with higher years of designing experience than him. Truly an amazing designer.",
+  },
+  {
+    id: 3,
+    name: "Ahmed Yusuf",
+    job: "Product Designer",
+    img: "",
+    description:
+      "Teddy has been an amazing addon to our company, despite it being a short term contract, he has managed to tremendously improve our services to better suite the taste of our users and also increased our userbase.",
+  },
+  {
+    id: 4,
+    name: "Ayo Adegoke",
+    job: "UX/UI Designer",
+    img: "",
+    description:
+      "I really enjoyed the process working alongside Teddy. I am confident to say he is passionate about what he does, he has a sharp eye for detail and creativity. He is very professional with his work. I highly recommend his services.",
+  },
+];

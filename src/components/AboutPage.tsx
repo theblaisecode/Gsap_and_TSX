@@ -1,4 +1,5 @@
 import bentoImg from "../assets/TeddyTheCreator.png";
+import Testimonial from "./Testimonial.tsx";
 
 export const BentoGrid = () => {
   return (
@@ -21,9 +22,7 @@ export const BentoGrid = () => {
         </div>
       </div>
 
-      <div className="item testimonial">
-
-      </div>
+      <Testimonial />
     </div>
   );
 };

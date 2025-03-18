@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../data.ts";
-import { navLinkType } from "../types/types.tsx";
+import { type navLinkType } from "../types/types.tsx";
 
 function NavLinks() {
   return (
