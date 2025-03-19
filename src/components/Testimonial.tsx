@@ -15,16 +15,9 @@ function Testimonial() {
     pauseOnHover: true,
   };
 
-  /**
-   *  id: number;
-      name: string;
-      job: string;
-      img: string;
-   */
-
   return (
     <div className="item testimonial">
-      <div className="slider-container">
+      <div className="slider-container ">
         <Slider {...settings}>
           {testimonial.map((testimonialItem: testimonialType) => {
             const { id, name, job, img, description }: testimonialType =

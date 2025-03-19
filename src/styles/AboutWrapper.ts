@@ -37,7 +37,7 @@ const AboutWrapper = styled.section`
     max-width: 600px;
     grid-area: description;
   }
-  
+
   .bentoGrid .item:nth-child(3) {
     max-width: 901.5px;
     grid-area: testimonial;
@@ -45,6 +45,11 @@ const AboutWrapper = styled.section`
 
   .bentoGrid img {
     width: 100%;
+  }
+
+  .slick-list {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
