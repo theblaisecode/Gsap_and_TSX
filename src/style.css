@@ -1,7 +1,7 @@
 :root {
   --textLight: rgba(255, 255, 255, 0.871);
   --accent: #212121;
-  --socials:#505050;
+  --socials: #505050;
   --background: #121212;
   --darkBg: #080a14bf;
   --primary: #cc1100;
@@ -41,6 +41,10 @@ a {
 .myElement {
   white-space: nowrap;
   overflow: hidden;
+}
+
+.highlight {
+  color: var(--primary);
 }
 
 @media screen and (max-width: 950px), screen and (max-height: 550px) {

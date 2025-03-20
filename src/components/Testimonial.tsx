@@ -6,7 +6,7 @@ import { testimonialType } from "../types/types.tsx";
 
 function Testimonial() {
   const settings: TestimonialSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,

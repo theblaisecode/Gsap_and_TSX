@@ -85,15 +85,15 @@ export const testimonial: {
     id: 1,
     name: "Amaka N.",
     job: "FrontEnd Developer",
-    img: "",
+    img: "https://media.licdn.com/dms/image/v2/D4D03AQHECYFDxWlNtw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690489382129?e=1747872000&v=beta&t=0wy5Kt4dQU-SmEO5Om8u1yXjLDyQcZGtN6mVm0wLF34",
     description:
       "Teddy is an exceptional designer. Working with him has been a major plus to me and my team. He always has new inspiring ideas and when he sets his mind on something he’s always sure to go all out in accomplishing it.",
   },
   {
     id: 2,
     name: "J Grand",
-    job: "Senior Graphics Designer",
-    img: "",
+    job: "Graphics Designer",
+    img: "https://media.licdn.com/dms/image/v2/D4E03AQFFDSUgXCkYtg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1667490441820?e=1747872000&v=beta&t=TUnF7O87vfl0eSqIfwFv79sZKi4AN1O4pLzJ3aMdYQo",
     description:
       "Working with Teddy has been an amazing experience, his design etiquettes are top notch and i dare say on par with any top designer with higher years of designing experience than him. Truly an amazing designer.",
   },
@@ -101,16 +101,61 @@ export const testimonial: {
     id: 3,
     name: "Ahmed Yusuf",
     job: "Product Designer",
-    img: "",
+    img: "https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
     description:
       "Teddy has been an amazing addon to our company, despite it being a short term contract, he has managed to tremendously improve our services to better suite the taste of our users and also increased our userbase.",
   },
+  // {
+  //   id: 4,
+  //   name: "Linda Adegoke",
+  //   job: "UX/UI Designer",
+  //   img: "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+  //   description:
+  //     "I really enjoyed the process working alongside Teddy. I am confident to say he is passionate about what he does, he has a sharp eye for detail and creativity. He is very professional with his work. I highly recommend his services.",
+  // },
+];
+
+export const experience: {
+  id: number;
+  jobTitle: string;
+  company: string;
+  year: string;
+  workDid: string;
+}[] = [
+  {
+    id: 1,
+    jobTitle: "Product Design Intern",
+    company: "Druids Academy",
+    year: "Jan 2021 - Jul 2021",
+    workDid: "",
+  },
+  {
+    id: 2,
+    jobTitle: "Product Designer",
+    company: "Freelance",
+    year: "Jun 2021 - Present",
+    workDid:
+      "Focusing on user interface and user experience design, product design, visual design, prototyping, research, testing, motion design, graphic design and simple 3D design.",
+  },
+  {
+    id: 3,
+    jobTitle: "Product Design Intern",
+    company: "Zuri Internship",
+    year: "May 2022 - Aug 2022",
+    workDid: "",
+  },
   {
     id: 4,
-    name: "Ayo Adegoke",
-    job: "UX/UI Designer",
-    img: "",
-    description:
-      "I really enjoyed the process working alongside Teddy. I am confident to say he is passionate about what he does, he has a sharp eye for detail and creativity. He is very professional with his work. I highly recommend his services.",
+    jobTitle: "Product Designer",
+    company: "Seenema (Contract)",
+    year: "Jul 2022 - Dec 2022",
+    workDid: "",
+  },
+  {
+    id: 5,
+    jobTitle: "Product Designer",
+    company: "Minwo",
+    year: "Jul 2023 - Present",
+    workDid: "",
   },
 ];
