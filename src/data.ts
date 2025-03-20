@@ -127,7 +127,8 @@ export const experience: {
     jobTitle: "Product Design Intern",
     company: "Druids Academy",
     year: "Jan 2021 - Jul 2021",
-    workDid: "",
+    workDid:
+      "Worked along a team of designers and gained foundational knowledge in UI/UX design, learning design principles, wireframing, prototyping, and user research while working on practical projects.",
   },
   {
     id: 2,
@@ -142,20 +143,23 @@ export const experience: {
     jobTitle: "Product Design Intern",
     company: "Zuri Internship",
     year: "May 2022 - Aug 2022",
-    workDid: "",
+    workDid:
+      "Collaborated with a team to design and refine user interfaces, focusing on usability, accessibility, and responsive layouts for various digital products.",
   },
   {
     id: 4,
     jobTitle: "Product Designer",
     company: "Seenema (Contract)",
     year: "Jul 2022 - Dec 2022",
-    workDid: "",
+    workDid:
+      "Designed collaboratively with a design team to create the UI/UX for Seenema, a cinema booking platform, ensuring seamless ticket reservations and an engaging movie-watching experience within the app.",
   },
   {
     id: 5,
     jobTitle: "Product Designer",
     company: "Minwo",
     year: "Jul 2023 - Present",
-    workDid: "",
+    workDid:
+      "Contributing to product strategy, UI/UX design, and design systems, focusing on enhancing user engagement and optimizing workflows for Minwo’s digital platforms.",
   },
 ];
