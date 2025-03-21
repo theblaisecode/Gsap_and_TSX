@@ -5,17 +5,13 @@ function Designs() {
     <DesignsWrapper>
       <div className="container">
         <div className="designsContent">
-          <div className="top">
+          <div className="top"></div>
 
-          </div>
-
-          <div className="bottom">
-            
-          </div>
+          <div className="bottom"></div>
         </div>
       </div>
     </DesignsWrapper>
   );
 }
 
-export default Designs
+export default Designs;
