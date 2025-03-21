@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../data.ts";
-import { type navLinkType } from "../types/types.tsx";
+import { type NavLinkType } from "../types/types.tsx";
 
 function NavLinks() {
   return (
     <nav>
       <ul>
-        {navLinks.map((navLinks: navLinkType) => {
-          const { id, name, url, ariaLabel }: navLinkType = navLinks;
+        {navLinks.map((navLinks: NavLinkType) => {
+          const { id, name, url, ariaLabel }: NavLinkType = navLinks;
 
           return (
             <NavLink
@@ -21,7 +21,7 @@ function NavLinks() {
           );
         })}
       </ul>
-      
+
       {/* resume */}
       <div className="btn">
         <a

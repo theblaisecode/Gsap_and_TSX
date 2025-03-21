@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { testimonial, TestimonialSettings } from "../data.ts";
-import { testimonialType } from "../types/types.tsx";
+import { type TestimonialType } from "../types/types.tsx";
 
 function Testimonial() {
   const settings: TestimonialSettings = {
@@ -19,8 +19,8 @@ function Testimonial() {
     <div className=" testimonial">
       <div className="slider-container">
         <Slider {...settings}>
-          {testimonial.map((testimonialItem: testimonialType) => {
-            const { id, name, job, img, description }: testimonialType =
+          {testimonial.map((testimonialItem: TestimonialType) => {
+            const { id, name, job, img, description }: TestimonialType =
               testimonialItem;
 
             return (

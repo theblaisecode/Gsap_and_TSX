@@ -1,4 +1,6 @@
 import bentoImg from "../assets/TeddyTheCreator.png";
+import { experience } from "../data.ts";
+import { type ExperienceType } from "../types/types.tsx";
 import Testimonial from "./Testimonial.tsx";
 
 export const BentoGrid = () => {
@@ -31,5 +33,26 @@ export const BentoGrid = () => {
 };
 
 export const Experience = () => {
-  return <h2>Experience</h2>;
+  return (
+    <div className="experience">
+      <h2 className="heading">Experience</h2>
+
+      {experience.map((item: ExperienceType) => {
+        const { id, jobTitle, company, year, workDid }: ExperienceType = item;
+
+        return (
+          <div key={id}>
+            <>
+              <h3>
+                {jobTitle} — {company}
+              </h3>
+              <span>{year}</span>
+            </>
+
+            <>{workDid}</>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
