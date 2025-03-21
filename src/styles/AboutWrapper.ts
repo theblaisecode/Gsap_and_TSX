@@ -55,9 +55,21 @@ const AboutWrapper = styled.section`
   }
 
   /* Description */
+  .clients h2,
   .aboutTeddy h2 {
     font-size: 3rem;
     font-weight: 500;
+  }
+
+  .clients h2 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .clients {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
   }
 
   /* Slider */

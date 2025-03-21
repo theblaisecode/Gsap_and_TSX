@@ -22,7 +22,10 @@ export const BentoGrid = () => {
         </div>
       </div>
 
-      <Testimonial />
+      <div className="item clients">
+        <h2>What My Clients Say</h2>
+        <Testimonial />
+      </div>
     </div>
   );
 };
