@@ -152,7 +152,7 @@ export const experience: {
     company: "Seenema (Contract)",
     year: "Jul 2022 - Dec 2022",
     workDid:
-      "Designed collaboratively with a design team to create the UI/UX for Seenema, a cinema booking platform, ensuring seamless ticket reservations and an engaging movie-watching experience within the app.",
+      "Designed collaboratively with a design team to create the UI/UX for Seenema, a cinema booking platform, ensuring seamless ticket reservations and an engaging in app movie-watching experience.",
   },
   {
     id: 5,

@@ -17,9 +17,14 @@ export const BentoGrid = () => {
 
         <div className="aboutTeddyDescriptions">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugit
-            nemo provident ut corrupti quo recusandae quasi voluptas saepe
-            totam.
+            Teddy is a passionate UX/UI & Product Designer crafting seamless,
+            user-friendly experiences. With a focus on usability, aesthetics,
+            and functionality, he transforms ideas into intuitive digital
+            products. His expertise in wireframing, prototyping, and user
+            research ensures designs that not only look great but work
+            effortlessly. Always exploring new trends and tools, Teddy thrives
+            on collaboration to create impactful, user-centered solutions. Let’s
+            build something great together!
           </p>
         </div>
       </div>
@@ -37,22 +42,24 @@ export const Experience = () => {
     <div className="experience">
       <h2 className="heading">Experience</h2>
 
-      {experience.map((item: ExperienceType) => {
-        const { id, jobTitle, company, year, workDid }: ExperienceType = item;
+      <div className="allJobs">
+        {experience.map((item: ExperienceType) => {
+          const { id, jobTitle, company, year, workDid }: ExperienceType = item;
 
-        return (
-          <div key={id}>
-            <>
-              <h3>
-                {jobTitle} — {company}
-              </h3>
-              <span>{year}</span>
-            </>
+          return (
+            <div key={id}>
+              <>
+                <h3 className="job">
+                  {jobTitle} <span className="highlight">  — </span>{company}
+                </h3>
+                <span className="year">{year}</span>
+              </>
 
-            <>{workDid}</>
-          </div>
-        );
-      })}
+              <div className="workDid">{workDid}</div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const AboutWrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   /* Bento Grid */
@@ -14,7 +14,7 @@ const AboutWrapper = styled.section`
     width: 100%;
     display: grid;
     gap: 1.5rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     grid-template-areas:
@@ -45,7 +45,7 @@ const AboutWrapper = styled.section`
   }
 
   .bentoGrid .item:nth-child(3) {
-    padding: 1.2rem;
+    padding: 1.2rem 1.2rem 2.5rem 1.2rem;
     width: calc(300px + 500px + 2rem);
     grid-area: testimonial;
   }
@@ -56,9 +56,18 @@ const AboutWrapper = styled.section`
 
   /* Description */
   .clients h2,
-  .aboutTeddy h2 {
+  .aboutTeddy h2,
+  .experience h2 {
     font-size: 3rem;
     font-weight: 500;
+  }
+
+  .aboutTeddy .aboutTeddyDescriptions {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    opacity: 0.7;
   }
 
   .clients h2 {
@@ -69,7 +78,7 @@ const AboutWrapper = styled.section`
   .clients {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2rem;
   }
 
   /* Slider */
@@ -133,13 +142,45 @@ const AboutWrapper = styled.section`
     opacity: 0.7;
   }
 
-  .sliderContent .contentBottom {
+  .sliderContent .contentBottom,
+  .experience .allJobs .workDid {
+    opacity: 0.7;
     font-size: 1.4rem;
   }
 
   .slick-prev:before,
   .slick-next:before {
     display: none;
+  }
+
+  /* Experience */
+  .experience .allJobs {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .experience .allJobs .job {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  .experience .allJobs .highlight {
+    opacity: 0.7;
+  }
+
+  .experience .allJobs .year {
+    /* color: var(--primary); */
+    font-weight: 500;
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+  .experience .allJobs .workDid {
+    margin: 0.6rem 0 0 0;
+    font-weight: 300;
   }
 `;
 
