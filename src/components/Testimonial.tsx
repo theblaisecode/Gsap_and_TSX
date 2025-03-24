@@ -1,8 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { testimonial, TestimonialSettings } from "../data.ts";
-import { type TestimonialType } from "../types/types.tsx";
+import { testimonial } from "../data.ts";
+import {
+  type TestimonialSettings,
+  type TestimonialType,
+} from "../types/types.tsx";
 
 function Testimonial() {
   const settings: TestimonialSettings = {

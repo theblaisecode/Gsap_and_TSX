@@ -1,13 +1,25 @@
 import { RiDribbbleFill, RiBehanceLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
-import { JSX } from "react";
+import {
+  DesignsType,
+  ExperienceType,
+  NavLinkType,
+  TestimonialType,
+} from "./types/types.tsx";
 
-export const navLinks: {
-  id: number;
-  name: string;
-  url: string;
-  ariaLabel: string;
-}[] = [
+import design1 from "./assets/seenema.png";
+import design2 from "./assets/see.png";
+import design3 from "./assets/tessaract.png";
+import design4 from "./assets/logistics.png";
+import design5 from "./assets/game.png";
+import design6 from "./assets/beach.png";
+import design7 from "./assets/animation.png";
+import design8 from "./assets/music.png";
+import design9 from "./assets/medicare.png";
+import design10 from "./assets/seenemaApp.png";
+import design11 from "./assets/shop.png";
+
+export const navLinks: NavLinkType[] = [
   {
     id: 1,
     name: "Home",
@@ -64,23 +76,7 @@ export const socials: {
   },
 ];
 
-export type TestimonialSettings = {
-  dots: boolean;
-  infinite: boolean;
-  slidesToShow: number;
-  slidesToScroll: number;
-  autoplay: boolean;
-  autoplaySpeed: number;
-  pauseOnHover: boolean;
-};
-
-export const testimonial: {
-  id: number;
-  name: string;
-  job: string;
-  img: string;
-  description: string;
-}[] = [
+export const testimonial: TestimonialType[] = [
   {
     id: 1,
     name: "Amaka N.",
@@ -115,13 +111,7 @@ export const testimonial: {
   // },
 ];
 
-export const experience: {
-  id: number;
-  jobTitle: string;
-  company: string;
-  year: string;
-  workDid: string;
-}[] = [
+export const experience: ExperienceType[] = [
   {
     id: 1,
     jobTitle: "Product Design Intern",
@@ -161,5 +151,75 @@ export const experience: {
     year: "Jul 2023 - Present",
     workDid:
       "Contributing to product strategy, UI/UX design, and design systems, focusing on enhancing user engagement and optimizing workflows for Minwo’s digital platforms.",
+  },
+];
+
+export const designs: DesignsType[] = [
+  {
+    id: 1,
+    img: design1,
+    title: "Seenema (Case Study)",
+    info: "A movie streaming platform designed to help local cinemas stay competitive in the digital era, standing alongside major streaming services like Netflix.",
+  },
+  {
+    id: 2,
+    img: design2,
+    title: "See (Case Study)",
+    info: "A video conferencing and collaboration tool for large and small teams with whiteboarding, task management, and notes for seamless teamwork.",
+  },
+  {
+    id: 3,
+    img: design3,
+    title: "Tesseract (Case Study)",
+    info: "A versatile crypto wallet and trading platform allowing users manage, buy, sell, send, and receive digital assets. It offers real time news for accurate insights.",
+  },
+  {
+    id: 4,
+    img: design4,
+    title: "Alma Logistics",
+    info: "Alma Logistics is a smart tracking app for real-time order monitoring across air, sea, and land, with easy rider and package status contact—all in one  app.",
+  },
+  {
+    id: 5,
+    img: design5,
+    title: "Blizzard Games",
+    info: "A gaming hub for tournaments, match-finding, in-game content and competitions. Connect with the community and stay updated—all in one place.",
+  },
+  {
+    id: 6,
+    img: design6,
+    title: "Coconut Beach",
+    info: "A sleek and modern e-commerce design featuring beachwear, surf gear, and summer events, with bright visuals, tropical vibe and smooth navigation.",
+  },
+  {
+    id: 7,
+    img: design7,
+    title: "Medusa Studios",
+    info: "An award-winning animation agency crafting high-quality 2D and 3D animations for series, games, websites, and apps. Bringing ideas to life.",
+  },
+  {
+    id: 8,
+    img: design8,
+    title: "VibeStream",
+    info: "Discover, stream, and vibe to your favorite tunes with VibeStream. Features curated playlists, seamless playback, and an intuitive design. Music + Vibes",
+  },
+
+  {
+    id: 9,
+    img: design10,
+    title: "Seenema Movie App",
+    info: "Buy tickets, explore upcoming releases, and stream movies currently airing in cinemas—from the comfort of your home. Bringing the big screen to your fingertips.",
+  },
+  {
+    id: 10,
+    img: design9,
+    title: "Medicare",
+    info: "A modern healthcare app designed to connect users with medical professionals while managing medical records and prescriptions effortlessly.",
+  },
+  {
+    id: 11,
+    img: design11,
+    title: "ShopEase",
+    info: "Your go-to app for trendy fashion and footwear. Browse a curated collection of shoes, clothing, and accessories. Save favorites, and shop effortlessly with ShopEase.",
   },
 ];

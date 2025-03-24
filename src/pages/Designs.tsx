@@ -1,3 +1,4 @@
+import DesignsPage from "../components/DesignsPage.tsx";
 import DesignsWrapper from "../styles/DesignsWrapper.ts";
 
 function Designs() {
@@ -5,7 +6,9 @@ function Designs() {
     <DesignsWrapper>
       <div className="container">
         <div className="designsContent">
-          <div className="top"></div>
+          <div className="top">
+            <DesignsPage />
+          </div>
 
           <div className="bottom"></div>
         </div>

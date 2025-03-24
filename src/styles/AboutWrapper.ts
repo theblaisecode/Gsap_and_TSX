@@ -37,6 +37,9 @@ const AboutWrapper = styled.section`
   .bentoGrid .item:nth-child(1) {
     grid-area: image;
     max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .bentoGrid .item:nth-child(2) {

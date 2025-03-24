@@ -114,6 +114,12 @@ const HeaderWrapper = styled.header`
     border-radius: 0.2rem;
     color: var(--textLight);
     /* font-weight: 00; */
+    transition: 0.4s;
+  }
+
+  .resume:hover {
+    background: var(--primaryAccent);
+    transition: all 0.4s;
   }
 
   /* -------- Mobile Nav -------- */

@@ -295,7 +295,9 @@ const HomeWrapper = styled.section`
     opacity: 0.5;
   }
 
-  /* .jobContent .contentBottom .quote  */
+  .jobContent .contentBottom .quote p .highlight {
+    font-weight: 700;
+  }
 `;
 
 export default HomeWrapper;
