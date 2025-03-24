@@ -250,6 +250,7 @@ const HomeWrapper = styled.section`
 
   .jobContent .jobDescription {
     font-size: 1.4rem;
+    opacity: 0.8;
   }
 
   .jobContent .tags,

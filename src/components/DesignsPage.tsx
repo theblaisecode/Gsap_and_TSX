@@ -7,12 +7,12 @@ function DesignsPage() {
       <div className="designContent">
         <div className="contentTop">
           {designs.map((item: DesignsType) => {
-            const { id, img, title, info }: DesignsType = item;
+            const { id, img, imgAlt, title, info }: DesignsType = item;
 
             return (
               <div key={id} className="items designBox">
                 <div className="image">
-                  <img src={img} alt="Seenema casestudy image" />
+                  <img src={img} alt={imgAlt} />
                 </div>
 
                 <div className="designDescription">

@@ -31,27 +31,18 @@ export type ExperienceType = {
   workDid: string;
 };
 
-/**
- * <div className="designBox">
-      <div className="image">
-        <img src={design1} alt="Seenema casestudy image" />
-      </div>
-
-      <div className="designDescription">
-        <h3 className="designTitle">Seenema</h3>
-
-        <p className="info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          reprehenderit eos impedit odio odit reiciendis cupiditate
-          aperiam laboriosam eveniet. Ullam.
-        </p>
-      </div>
-    </div>
- */
-
 export type DesignsType = {
   id: number;
   img: string;
+  imgAlt: string;
   title: string;
   info: string;
+};
+
+export type ContactSocialType = {
+  id: number;
+  icon: React.ElementType;
+  href: string;
+  ariaLabel: string;
+  title: string;
 };

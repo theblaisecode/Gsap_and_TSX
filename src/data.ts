@@ -1,6 +1,7 @@
-import { RiDribbbleFill, RiBehanceLine } from "react-icons/ri";
+import { RiDribbbleFill, RiBehanceLine, RiTwitterXLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
 import {
+  ContactSocialType,
   DesignsType,
   ExperienceType,
   NavLinkType,
@@ -158,48 +159,56 @@ export const designs: DesignsType[] = [
   {
     id: 1,
     img: design1,
+    imgAlt: "Seenema casestudy image",
     title: "Seenema (Case Study)",
     info: "A movie streaming platform designed to help local cinemas stay competitive in the digital era, standing alongside major streaming services like Netflix.",
   },
   {
     id: 2,
     img: design2,
+    imgAlt: "See casestudy image",
     title: "See (Case Study)",
     info: "A video conferencing and collaboration tool for large and small teams with whiteboarding, task management, and notes for seamless teamwork.",
   },
   {
     id: 3,
     img: design3,
+    imgAlt: "Tesseract casestudy image",
     title: "Tesseract (Case Study)",
     info: "A versatile crypto wallet and trading platform allowing users manage, buy, sell, send, and receive digital assets. It offers real time news for accurate insights.",
   },
   {
     id: 4,
     img: design4,
+    imgAlt: "",
     title: "Alma Logistics",
     info: "Alma Logistics is a smart tracking app for real-time order monitoring across air, sea, and land, with easy rider and package status contact—all in one  app.",
   },
   {
     id: 5,
     img: design5,
+    imgAlt: "Blizzard Games image",
     title: "Blizzard Games",
     info: "A gaming hub for tournaments, match-finding, in-game content and competitions. Connect with the community and stay updated—all in one place.",
   },
   {
     id: 6,
     img: design6,
+    imgAlt: "Coconut Beach image",
     title: "Coconut Beach",
     info: "A sleek and modern e-commerce design featuring beachwear, surf gear, and summer events, with bright visuals, tropical vibe and smooth navigation.",
   },
   {
     id: 7,
     img: design7,
+    imgAlt: "Medusa Studios image",
     title: "Medusa Studios",
     info: "An award-winning animation agency crafting high-quality 2D and 3D animations for series, games, websites, and apps. Bringing ideas to life.",
   },
   {
     id: 8,
     img: design8,
+    imgAlt: "VibeStream image",
     title: "VibeStream",
     info: "Discover, stream, and vibe to your favorite tunes with VibeStream. Features curated playlists, seamless playback, and an intuitive design. Music + Vibes.",
   },
@@ -207,19 +216,53 @@ export const designs: DesignsType[] = [
   {
     id: 9,
     img: design10,
+    imgAlt: "Seenema Movie App image",
     title: "Seenema Movie App",
     info: "Buy tickets, explore upcoming releases, and stream movies currently airing in cinemas—from the comfort of your home. Bringing the big screen to your fingertips.",
   },
   {
     id: 10,
     img: design9,
+    imgAlt: "Medicare image",
     title: "Medicare",
     info: "A modern healthcare app designed to connect users with medical professionals while managing medical records and prescriptions effortlessly.",
   },
   {
     id: 11,
     img: design11,
+    imgAlt: "ShopEase image",
     title: "ShopEase",
     info: "Your go-to app for trendy fashion and footwear. Browse a curated collection of shoes, clothing, and accessories. Save favorites, and shop effortlessly with ShopEase.",
+  },
+];
+
+export const contactSocials: ContactSocialType[] = [
+  {
+    id: 1,
+    icon: RiDribbbleFill,
+    href: "https://dribbble.com/Teddy_016",
+    ariaLabel: "Link to TeddyTheCreator's Dribbble page",
+    title: "Dribbble",
+  },
+  {
+    id: 2,
+    icon: RiBehanceLine,
+    href: "https://www.behance.net/nwachukcharles",
+    ariaLabel: "Link to TeddyTheCreator's Behance page",
+    title: "Behance",
+  },
+  {
+    id: 3,
+    icon: CiLinkedin,
+    href: "https://linkedin.com/in/teddy016",
+    ariaLabel: "Link to TeddyTheCreator's LinkedIN page",
+    title: "LinkedIN",
+  },
+  {
+    id: 4,
+    icon: RiTwitterXLine,
+    href: "https://twitter.com/Teddy_016",
+    ariaLabel: "Link to TeddyTheCreator's Twitter page",
+    title: "Twitter",
   },
 ];

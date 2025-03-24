@@ -1,3 +1,6 @@
+import { contactSocials } from "../data.ts";
+import { type ContactSocialType } from "../types/types.tsx";
+
 export const LetsWorkTogether = () => {
   return (
     <div id="letsWork">
@@ -12,7 +15,28 @@ export const LetsWorkTogether = () => {
           </p>
         </div>
 
-        <div className="contentBottom"></div>
+        <div className="contentBottom">
+          <div className="contactSocials">
+            {contactSocials.map((item: ContactSocialType) => {
+              const {
+                id,
+                icon: Icon,
+                href,
+                ariaLabel,
+                title,
+              }: ContactSocialType = item;
+
+              return (
+                <a key={id} href={href} target="_blank" aria-label={ariaLabel}>
+                  <span className="icon">
+                    <Icon />
+                  </span>
+                  <span className="reachMe">{title}</span>
+                </a>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
