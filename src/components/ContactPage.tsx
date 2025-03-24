@@ -12,9 +12,7 @@ export const LetsWorkTogether = () => {
           </p>
         </div>
 
-        <div className="contentBottom">
-          
-        </div>
+        <div className="contentBottom"></div>
       </div>
     </div>
   );
@@ -24,7 +22,7 @@ export const ContactForm = () => {
   return (
     <div id="form">
       <div className="formContent">
-        <div className="contentTop">Contact Form</div>;
+        <div className="contentTop">Contact Form</div>
       </div>
     </div>
   );
