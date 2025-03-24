@@ -1,7 +1,22 @@
+import { ContactForm, LetsWorkTogether } from "../components/ContactPage.tsx";
+import ContactWrapper from "../styles/ContactWrapper.ts";
+
 function Contact() {
   return (
-    <div>Contact</div>
-  )
+    <ContactWrapper>
+      <div className="container">
+        <div className="contactContent">
+          <div className="top">
+            <LetsWorkTogether />
+          </div>
+
+          <div className="bottom">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+    </ContactWrapper>
+  );
 }
 
-export default Contact
+export default Contact;

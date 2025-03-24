@@ -201,7 +201,7 @@ export const designs: DesignsType[] = [
     id: 8,
     img: design8,
     title: "VibeStream",
-    info: "Discover, stream, and vibe to your favorite tunes with VibeStream. Features curated playlists, seamless playback, and an intuitive design. Music + Vibes",
+    info: "Discover, stream, and vibe to your favorite tunes with VibeStream. Features curated playlists, seamless playback, and an intuitive design. Music + Vibes.",
   },
 
   {

@@ -9,8 +9,6 @@ function Designs() {
           <div className="top">
             <DesignsPage />
           </div>
-
-          <div className="bottom"></div>
         </div>
       </div>
     </DesignsWrapper>
