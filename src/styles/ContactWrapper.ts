@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
 const ContactWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 9rem 0 0 0;
+
   .contactContent {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
+    align-items: flex-start;
+    /* flex-direction: row-reverse; */
     /* border: 2px solid #464545;
     border-radius: 5px; */
     padding: 5rem;
@@ -77,6 +83,9 @@ const ContactWrapper = styled.section`
     background: var(--accent);
     color: var(--textLight);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     font-size: 2rem;
     width: 5rem;
@@ -99,14 +108,14 @@ const ContactWrapper = styled.section`
   form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   form #name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   form #name p {
@@ -137,6 +146,31 @@ const ContactWrapper = styled.section`
 
   form textarea {
     height: 20rem;
+    resize: none;
+  }
+
+  form .formButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  form .formButton button {
+    background: var(--primary);
+    outline: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem;
+    border-radius: 0.2rem;
+    color: var(--textLight);
+    transition: 0.4s;
+  }
+
+  form .formButton button:hover {
+    background: var(--primaryAccent);
+    transition: all 0.4s;
   }
 `;
 

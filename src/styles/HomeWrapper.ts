@@ -108,6 +108,12 @@ const HomeWrapper = styled.section`
     border: 0.1rem solid var(--primary);
     border-bottom-right-radius: 2rem;
     cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .introContent .btn2:hover {
+    background: var(--primary);
+    transition: all 0.4s;
   }
 
   .introContent .contactme {
