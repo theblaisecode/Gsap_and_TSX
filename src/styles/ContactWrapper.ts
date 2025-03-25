@@ -96,10 +96,47 @@ const ContactWrapper = styled.section`
   }
 
   /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   form #name {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+  }
+
+  form #name p {
+    flex: 1;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--textLight);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    border-bottom: 0.2rem solid var(--textLightAccent);
+    transition: 0.4s;
+  }
+
+  form input:focus,
+  form textarea:focus,
+  form input:hover,
+  form textarea:hover {
+    border-bottom: 0.2rem solid var(--primaryAccent);
+    transition: all 0.4s;
+  }
+
+  form textarea {
+    height: 20rem;
   }
 `;
 

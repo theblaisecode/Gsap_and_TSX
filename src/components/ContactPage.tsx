@@ -46,45 +46,48 @@ export const ContactForm = () => {
   return (
     <div id="form">
       <div className="formContent">
-          <form>
-            <div id="name">
-              <p>
-                <input
-                  type="text"
-                  id="fName"
-                  name="fName"
-                  placeholder="First Name"
-                />
-              </p>
-
-              <p>
-                <input
-                  type="text"
-                  id="lName"
-                  name="lName"
-                  placeholder="Last Name"
-                />
-              </p>
-            </div>
-
-            <div id="email">
+        <form>
+          <div id="name">
+            <p>
               <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="EmailAddress"
+                type="text"
+                id="fName"
+                name="fName"
+                required
+                placeholder="First Name"
               />
-            </div>
+            </p>
 
-            <div id="message">
-              <textarea placeholder="Message"></textarea>
-            </div>
+            <p>
+              <input
+                type="text"
+                id="lName"
+                name="lName"
+                required
+                placeholder="Last Name"
+              />
+            </p>
+          </div>
 
-            <div className="formButton">
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
+          <div id="email">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Email Address"
+            />
+          </div>
+
+          <div id="message">
+            <textarea required placeholder="Message"></textarea>
+          </div>
+
+          <div className="formButton">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

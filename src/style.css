@@ -1,5 +1,6 @@
 :root {
   --textLight: rgba(255, 255, 255, 0.871);
+  --textLightAccent: rgba(255, 255, 255, 0.562);
   --accent: #212121;
   --socials: #505050;
   --background: #121212;
