@@ -46,8 +46,45 @@ export const ContactForm = () => {
   return (
     <div id="form">
       <div className="formContent">
-        <div className="contentTop">Contact Form</div>
-      </div>
+          <form>
+            <div id="name">
+              <p>
+                <input
+                  type="text"
+                  id="fName"
+                  name="fName"
+                  placeholder="First Name"
+                />
+              </p>
+
+              <p>
+                <input
+                  type="text"
+                  id="lName"
+                  name="lName"
+                  placeholder="Last Name"
+                />
+              </p>
+            </div>
+
+            <div id="email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="EmailAddress"
+              />
+            </div>
+
+            <div id="message">
+              <textarea placeholder="Message"></textarea>
+            </div>
+
+            <div className="formButton">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
     </div>
   );
 };

@@ -6,6 +6,7 @@ const ContactWrapper = styled.section`
     gap: 2rem;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row-reverse;
     /* border: 2px solid #464545;
     border-radius: 5px; */
     padding: 5rem;
@@ -21,6 +22,8 @@ const ContactWrapper = styled.section`
   .contactContent .bottom {
     flex: 1;
   }
+
+  /* Lets Work Together */
 
   .letsWorkContent,
   .letsWorkContent .contentTop {
@@ -47,6 +50,8 @@ const ContactWrapper = styled.section`
   .letsWorkContent .contentBottom {
     width: 70%;
   }
+
+  /* Socials */
 
   .contactSocials {
     display: grid;
@@ -88,6 +93,13 @@ const ContactWrapper = styled.section`
   .contactSocials a:hover .icon {
     background: var(--primary);
     transition: all 0.4s;
+  }
+
+  /* Contact Form */
+  form #name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 
