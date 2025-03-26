@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import HeaderWrapper from "../styles/HeaderWrapper.ts";
-import logo from "../assets/TeddyTheCreator.png";
 import NavLinks from "./NavLinks.tsx";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
