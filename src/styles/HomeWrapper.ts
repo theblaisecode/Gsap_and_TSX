@@ -305,6 +305,94 @@ const HomeWrapper = styled.section`
   .jobContent .contentBottom .quote p .highlight {
     font-weight: 700;
   }
+
+  @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    margin: 4rem 0 6rem 0;
+
+    .homeContent {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8rem;
+      width: 100%;
+    }
+
+    .homeContent .top {
+      width: 100%;
+    }
+
+    .homeContent .bottom {
+      flex-direction: column-reverse;
+      flex: 1;
+    }
+
+    #intro,
+    #job {
+      height: auto;
+    }
+
+    .introContent {
+      justify-content: flex-start;
+    }
+
+    .introContent .contactme {
+      width: 70%;
+    }
+
+    .introContent .socials .socialLinks .platform {
+      padding-right: 3.5rem;
+    }
+
+    .introContent .socials .socialLinks {
+      gap: 3.5rem;
+    }
+
+    .introContent .contentBottom {
+      display: none;
+    }
+
+    #job {
+      width: 100%;
+    }
+
+    #job .jobContent {
+      justify-content: flex-start;
+      gap: 4rem;
+    }
+
+    .jobContent .contentTop {
+      gap: 2rem;
+    }
+
+    .jobContent .tags ul {
+      gap: 1rem;
+    }
+
+    .jobContent .tags ul li {
+      padding-right: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .jobContent .contentBottom {
+      justify-content: flex-start;
+    }
+
+    .jobContent .contentBottom .quote {
+      width: 90%;
+    }
+
+    #teddy {
+      width: 65%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-top: 6rem;
+    }
+
+    #teddy img {
+      width: 100%;
+    }
+  }
 `;
 
 export default HomeWrapper;

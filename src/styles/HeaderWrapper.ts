@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
+  z-index: 100;
+  position: relative;
   padding: 3rem 0;
 
   .headerContent {
@@ -10,7 +12,6 @@ const HeaderWrapper = styled.header`
   }
 
   .contentTop {
-    /* Logo takes about 1/3 of the space */
     flex: 1;
   }
 
@@ -43,7 +44,6 @@ const HeaderWrapper = styled.header`
   }
 
   .navigation {
-    /* Navigation takes about 2/3 of the space */
     flex: 2;
     display: flex;
     justify-content: flex-end;
@@ -57,9 +57,9 @@ const HeaderWrapper = styled.header`
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Evenly space nav items */
-    width: 100%; /* Take full width of parent */
-    gap: 2rem; /* Minimum gap between items */
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
   }
 
   nav ul {
@@ -113,7 +113,6 @@ const HeaderWrapper = styled.header`
     padding: 1rem 3rem;
     border-radius: 0.2rem;
     color: var(--textLight);
-    /* font-weight: 00; */
     transition: 0.4s;
   }
 
@@ -132,8 +131,6 @@ const HeaderWrapper = styled.header`
   }
 
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
-    /* border-bottom: none; */
-
     z-index: 100;
 
     .container {
@@ -157,6 +154,9 @@ const HeaderWrapper = styled.header`
       position: fixed;
       right: -100%;
       top: 3rem;
+      width: 70%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
       transition: 0.4s;
     }
 
@@ -169,21 +169,21 @@ const HeaderWrapper = styled.header`
       width: 100%;
       height: 100vh;
       flex-direction: column;
-      gap: 3.5rem;
+      gap: 5rem;
       justify-content: flex-start;
       align-items: flex-start;
-      padding: 9rem 4rem 0 0;
+      padding: 0 4rem 0 0;
       margin-top: -3rem;
-      border-left: 0.1rem solid var(--primary);
+      /* border-left: 0.1rem solid var(--primary); */
       background: var(--background);
-      z-index: 100;
+      z-index: 200;
     }
 
     nav ul {
       flex-direction: column;
       flex: 1;
-      justify-content: space-between;
-      gap: 3rem;
+      justify-content: flex-end;
+      gap: 5rem;
     }
 
     nav ul a {
@@ -220,6 +220,12 @@ const HeaderWrapper = styled.header`
       margin-top: 8rem;
       margin-bottom: 3rem;
       text-align: center;
+    }
+  }
+
+  @media (min-width: 680px) and (max-width: 950px) {
+    .allLink {
+      width: 40%;
     }
   }
 `;
