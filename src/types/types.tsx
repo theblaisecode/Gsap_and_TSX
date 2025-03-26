@@ -13,7 +13,12 @@ export type TestimonialSettings = {
   autoplay: boolean;
   autoplaySpeed: number;
   pauseOnHover: boolean;
+  responsive?: {
+    breakpoint: number;
+    settings: Partial<Omit<TestimonialSettings, "responsive">>;
+  }[];
 };
+
 
 export type TestimonialType = {
   id: number;

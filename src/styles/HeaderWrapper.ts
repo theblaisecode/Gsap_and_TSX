@@ -134,6 +134,8 @@ const HeaderWrapper = styled.header`
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
     /* border-bottom: none; */
 
+    z-index: 100;
+
     .container {
       width: 90%;
     }
@@ -172,8 +174,9 @@ const HeaderWrapper = styled.header`
       align-items: flex-start;
       padding: 9rem 4rem 0 0;
       margin-top: -3rem;
-      /* border-left: 0.1rem solid var(--primary); */
-      background: var(--accent);
+      border-left: 0.1rem solid var(--primary);
+      background: var(--background);
+      z-index: 100;
     }
 
     nav ul {

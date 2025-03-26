@@ -12,9 +12,6 @@ const ContactWrapper = styled.section`
     gap: 4rem;
     justify-content: space-between;
     align-items: flex-start;
-    /* flex-direction: row-reverse; */
-    /* border: 2px solid #464545;
-    border-radius: 5px; */
     padding: 5rem;
     background: rgba(204, 17, 0, 0.1);
     box-shadow: 0 0.8rem 3.2rem 0 rgba(204, 38, 0, 0.08);
@@ -27,9 +24,8 @@ const ContactWrapper = styled.section`
   .contactContent .top,
   .contactContent .bottom {
     flex: 1;
+    width: 100%;
   }
-
-  /* Lets Work Together */
 
   .letsWorkContent,
   .letsWorkContent .contentTop {
@@ -174,18 +170,112 @@ const ContactWrapper = styled.section`
   }
 
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    margin: 4rem 0 0 0;
+
     .contactContent {
-     flex-direction:column;
-      gap: 4rem;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 1rem;
-      background: rgba(204, 17, 0, 0.1);
-      box-shadow: 0 0.8rem 3.2rem 0 rgba(204, 38, 0, 0.08);
-      backdrop-filter: blur(0.65rem);
-      -webkit-backdrop-filter: blur(0.65rem);
-      border-radius: 1rem;
-      border: 0.1rem solid rgba(255, 255, 255, 0.05);
+      flex-direction: column;
+      gap: 3rem;
+      padding: 1rem 1.5rem;
+    }
+
+    .letsWorkContent {
+      gap: 2rem;
+    }
+
+    .letsWorkContent .contentTop {
+      gap: 3rem;
+    }
+
+    .letsWorkContent .contentTop {
+      gap: 1rem;
+    }
+
+    .letsWorkContent .contentTop h2 {
+      font-size: 3rem;
+    }
+
+    .letsWorkContent .contentTop p {
+      font-size: 1.3rem;
+      opacity: 0.7;
+      line-height: 2.5rem;
+      letter-spacing: 0.04rem;
+    }
+
+    .contactSocials {
+      gap: 2rem;
+      column-gap: 5rem;
+    }
+
+    .contactSocials a {
+      gap: 1rem;
+    }
+
+    .contactSocials a span {
+      font-size: 1.4rem;
+    }
+
+    .contactSocials a .icon {
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+
+    form {
+      gap: 1rem;
+    }
+
+    .formContent,
+    form {
+      width: 100%;
+    }
+
+    form #name {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    form #name p {
+      width: 100%;
+    }
+
+    form input,
+    form textarea {
+      font-size: 1.4rem;
+    }
+
+    form textarea {
+      height: 10rem;
+      resize: none;
+    }
+
+    form .formButton button {
+      font-size: 1.4rem;
+      padding: 0.8rem 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 950px) {
+    .contactSocials {
+      gap: 2rem;
+      column-gap: 2rem;
+    }
+
+    form {
+      gap: 2rem;
+    }
+
+    form #name {
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    form textarea {
+      height: 12rem;
+      resize: none;
     }
   }
 `;

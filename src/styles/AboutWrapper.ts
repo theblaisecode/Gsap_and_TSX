@@ -8,23 +8,26 @@ const AboutWrapper = styled.section`
     gap: 4rem;
   }
 
+  .aboutContent .top {
+    flex: 1.5;
+  }
+
+  .aboutContent .bottom {
+    flex: 1;
+  }
+
   /* Bento Grid */
   .bentoGrid {
     overflow: hidden;
     width: 100%;
     display: grid;
     gap: 1.5rem;
-    /* padding: 1rem; */
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "image description description"
-      "testimonial testimonial testimonial";
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
   }
 
   .item {
-    /* border: 2px solid #464545;
-    border-radius: 5px; */
     padding: 2rem;
     background: rgba(204, 17, 0, 0.1);
     box-shadow: 0 0.8rem 3.2rem 0 rgba(204, 38, 0, 0.08);
@@ -35,22 +38,20 @@ const AboutWrapper = styled.section`
   }
 
   .bentoGrid .item:nth-child(1) {
-    grid-area: image;
-    max-width: 300px;
+    /* grid-area: image; */
+    grid-column: span 1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .bentoGrid .item:nth-child(2) {
-    max-width: 500px;
-    grid-area: description;
+    grid-column: span 2;
   }
 
   .bentoGrid .item:nth-child(3) {
     padding: 1.2rem 1.2rem 2.5rem 1.2rem;
-    width: calc(300px + 500px + 2rem);
-    grid-area: testimonial;
+    grid-column: span 3;
   }
 
   .bentoGrid img {
@@ -184,6 +185,102 @@ const AboutWrapper = styled.section`
   .experience .allJobs .workDid {
     margin: 0.6rem 0 0 0;
     font-weight: 300;
+  }
+
+  @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    margin: 4rem 0 6rem 0;
+
+    .aboutContent {
+      flex-direction: column;
+    }
+
+    .aboutContent .top {
+      flex: 1;
+    }
+
+    .aboutContent .bottom {
+      padding: 0 3rem;
+    }
+
+    /* Bento Grid */
+    .bentoGrid {
+      grid-template-columns: repeat(1, 1fr); /* Single column layout */
+    }
+
+    /* Reset any span settings to enforce a single-column layout */
+    .bentoGrid .item:nth-child(1),
+    .bentoGrid .item:nth-child(2),
+    .bentoGrid .item:nth-child(3) {
+      grid-column: span 2;
+    }
+
+    .bentoGrid img {
+      width: 70%;
+    }
+
+    .slick-track {
+      gap: 2rem;
+    }
+
+    .slick-slide {
+      width: 900px;
+      max-width: 900px;
+      padding: 1.2rem;
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 950px) {
+    .aboutContent {
+      flex-direction: column;
+    }
+
+    /* */
+    .bentoGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bentoGrid .item:nth-child(1) {
+      grid-column: span 1;
+    }
+
+    .bentoGrid .item:nth-child(2) {
+      grid-column: span 1;
+    }
+
+    .bentoGrid img {
+      width: 90%;
+    }
+
+    .aboutTeddy .aboutTeddyDescriptions {
+      font-size: 1.4rem;
+      line-height: 2.3rem;
+      letter-spacing: normal;
+      margin-top: 1rem;
+      opacity: 0.7;
+    }
+
+    .slick-track {
+      gap: 2rem;
+    }
+    
+    /*
+    .slick-slide {
+      width: 900px;
+      max-width: 900px;
+      padding: 1.2rem;
+    } */
+  }
+
+  @media (min-width: 951px) and (max-width: 1440px) {
+    .slick-track {
+      gap: 1.5rem;
+    }
+
+    .slick-slide {
+      width: 1000px !important;
+      max-width: 1000px !important;
+      padding: 1.2rem;
+    }
   }
 `;
 

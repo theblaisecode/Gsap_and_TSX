@@ -65,7 +65,47 @@ const DesignsWrapper = styled.section`
 
   .designContent .designBox .info {
     opacity: 0.7;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+  }
+
+  @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    overflow-y: auto;
+
+    .designContent {
+      margin: 4rem 0 6rem 0;
+    }
+
+    .designContent .contentTop {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+    }
+
+    .designContent .designBox {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .designContent .designBox:last-child {
+      padding: 3rem 0;
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 950px) {
+    .designContent .contentTop {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  @media (min-width: 951px) and (max-width: 1200px) {
+    .designContent {
+      margin: 4rem 0 6rem 0;
+    }
+
+    .designContent .contentTop {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
   }
 `;
 
