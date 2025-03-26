@@ -172,6 +172,22 @@ const ContactWrapper = styled.section`
     background: var(--primaryAccent);
     transition: all 0.4s;
   }
+
+  @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    .contactContent {
+     flex-direction:column;
+      gap: 4rem;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1rem;
+      background: rgba(204, 17, 0, 0.1);
+      box-shadow: 0 0.8rem 3.2rem 0 rgba(204, 38, 0, 0.08);
+      backdrop-filter: blur(0.65rem);
+      -webkit-backdrop-filter: blur(0.65rem);
+      border-radius: 1rem;
+      border: 0.1rem solid rgba(255, 255, 255, 0.05);
+    }
+  }
 `;
 
 export default ContactWrapper;
