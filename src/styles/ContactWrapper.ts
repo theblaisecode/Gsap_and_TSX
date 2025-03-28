@@ -162,6 +162,7 @@ const ContactWrapper = styled.section`
     border-radius: 0.2rem;
     color: var(--textLight);
     transition: 0.4s;
+    cursor: pointer;
   }
 
   form .formButton button:hover {

@@ -336,7 +336,7 @@ const HomeWrapper = styled.section`
     }
 
     .introContent .contactme {
-      width: 70%;
+      width: 50%;
     }
 
     .introContent .socials .socialLinks .platform {
