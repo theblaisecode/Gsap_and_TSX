@@ -269,7 +269,7 @@ const HomeWrapper = styled.section`
   .jobContent .tags ul {
     list-style: none;
     justify-content: space-between;
-    gap: 1.2rem;
+    gap: 1rem;
   }
 
   .jobContent .tags ul li {
@@ -398,7 +398,7 @@ const HomeWrapper = styled.section`
 
     .jobContent .tags ul li {
       padding-right: 1rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .jobContent .contentBottom {
@@ -433,6 +433,10 @@ const HomeWrapper = styled.section`
     .introContent .contentTop .socials {
       justify-content: space-between;
       align-items: flex-start;
+    }
+
+    .jobContent .contentBottom .quote {
+      text-align: center;
     }
   }
 `;
