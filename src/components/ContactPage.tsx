@@ -2,7 +2,7 @@ import { contactSocials } from "../data.ts";
 import { type ContactSocialType } from "../types/types.tsx";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const LetsWorkTogether = () => {
@@ -91,7 +91,11 @@ export const ContactForm = () => {
   return (
     <div id="form">
       <div className="formContent">
-        <form ref={formRef} onSubmit={sendEmail}>
+        <form
+          ref={formRef}
+          onSubmit={sendEmail}
+          data-netlify="true"
+          data-netlify-recaptcha="true">
           <div id="name">
             <p>
               <input

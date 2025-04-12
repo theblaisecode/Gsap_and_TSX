@@ -335,8 +335,26 @@ const HomeWrapper = styled.section`
       justify-content: flex-start;
     }
 
+    .introContent .contentTop,
+    .introContent .contentTop .introDeets,
+    .introContent .contentTop .socials {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .introContent .contentTop .introDeets {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .introContent .contentTop .introDeets,
+    .introContent .contentTop .introDeets .greetings {
+      /* align-self: center; */
+      text-align: center;
+    }
+
     .introContent .contactme {
-      width: 50%;
+      width: 100%;
     }
 
     .introContent .socials .socialLinks .platform {
@@ -345,6 +363,10 @@ const HomeWrapper = styled.section`
 
     .introContent .socials .socialLinks {
       gap: 3.5rem;
+    }
+
+    .introContent .socials .socialLinks a:last-child .platform {
+      padding-right: 0;
     }
 
     .introContent .contentBottom {
@@ -364,6 +386,12 @@ const HomeWrapper = styled.section`
       gap: 2rem;
     }
 
+    .jobContent .contentTop {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
     .jobContent .tags ul {
       gap: 1rem;
     }
@@ -374,7 +402,7 @@ const HomeWrapper = styled.section`
     }
 
     .jobContent .contentBottom {
-      justify-content: flex-start;
+      justify-content: center;
     }
 
     .jobContent .contentBottom .quote {
@@ -391,6 +419,20 @@ const HomeWrapper = styled.section`
 
     #teddy img {
       width: 100%;
+    }
+  }
+
+  @media (min-width: 630px) and (max-width: 950px) {
+    .introContent .contentTop {
+      flex-direction: row;
+      justify-content: space-between;
+      /* align-items: flex-end; */
+    }
+
+    .introContent .contentTop .introDeets,
+    .introContent .contentTop .socials {
+      justify-content: space-between;
+      align-items: flex-start;
     }
   }
 `;

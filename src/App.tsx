@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./components/Header.tsx";
+// import Header from "./components/Header.tsx";
 import HomeLayout from "./Layout/HomeLayout.tsx";
 import { Home, About, Designs, Contact } from "./pages/index.tsx";
 // import Intro from "./components/Intro.tsx";
