@@ -5,7 +5,7 @@ function Designs() {
   return (
     <DesignsWrapper>
       <div className="container">
-        <div className="designsContent animate">
+        <div className="designsContent">
           <div className="top">
             <DesignsPage />
           </div>
