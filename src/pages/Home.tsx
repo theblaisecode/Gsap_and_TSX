@@ -12,7 +12,7 @@ function Home() {
           </div>
 
           <div className="bottom">
-            <div id="teddy">
+            <div id="teddy" className="animate">
               <img src={teddy} alt="Photo of teddythecreator" />
             </div>
 

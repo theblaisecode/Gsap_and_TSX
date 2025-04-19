@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export const LetsWorkTogether = () => {
   return (
-    <div id="letsWork">
+    <div id="letsWork" className="animate">
       <div className="letsWorkContent">
         <div className="contentTop">
           <h2>Let's work together!</h2>
@@ -89,7 +89,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div id="form">
+    <div id="form" className="animate">
       <div className="formContent">
         <form
           ref={formRef}

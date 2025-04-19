@@ -5,7 +5,7 @@ function Contact() {
   return (
     <ContactWrapper>
       <div className="container">
-        <div className="contactContent">
+        <div className="contactContent animate">
           <div className="top">
             <LetsWorkTogether />
           </div>

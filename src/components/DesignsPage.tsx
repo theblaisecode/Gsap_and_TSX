@@ -10,7 +10,7 @@ function DesignsPage() {
             const { id, img, imgAlt, title, info }: DesignsType = item;
 
             return (
-              <div key={id} className="items designBox">
+              <div key={id} className="items designBox animate">
                 <div className="image">
                   <img src={img} alt={imgAlt} />
                 </div>
@@ -24,7 +24,7 @@ function DesignsPage() {
             );
           })}
 
-          <div className="designBox seeMore">
+          <div className="designBox seeMore animate">
             <a
               className="more"
               href="https://dribbble.com/Teddy_016"

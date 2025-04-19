@@ -5,7 +5,7 @@ import { socials } from "../data.ts";
 
 export const Intro = () => {
   return (
-    <div id="intro">
+    <div id="intro" className="animate">
       <div className="introContent">
         <div className="contentTop">
           <div className="introDeets">
@@ -70,7 +70,7 @@ export const Intro = () => {
 
 export const Job = () => {
   return (
-    <div id="job">
+    <div id="job" className="animate">
       <div className="jobContent">
         <div className="contentTop">
           <div className="details">
