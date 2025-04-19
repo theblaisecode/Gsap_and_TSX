@@ -7,11 +7,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 //   gsap.to(target, { x: 400, duration: 3, opacity: 0.5, delay: 2 });
 // };
 
-// export const headerFade = (target: string | HTMLElement | null) => {
-//   if (!target) return;
+export const headerFade = (target: string | HTMLElement | null) => {
+  if (!target) return;
 
-//   gsap.fromTo(target, { opacity: 0 }, { opacity: 1, duration: 2 });
-// };
+  gsap.fromTo(target, { opacity: 0 }, { opacity: 1, duration: 2 });
+};
 
 // Slide Up
 gsap.registerPlugin(ScrollTrigger);
