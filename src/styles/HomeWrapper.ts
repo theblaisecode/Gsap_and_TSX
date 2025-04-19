@@ -424,16 +424,20 @@ const HomeWrapper = styled.section`
 
   @media (min-width: 630px) and (max-width: 950px) {
     .introContent .contentTop {
-      flex-direction: row;
-      justify-content: space-between;
-      /* align-items: flex-end; */
+      gap: 8rem;
     }
 
-    .introContent .contentTop .introDeets,
+    /* .introContent .contentTop {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    } */
+
+    /* .introContent .contentTop .introDeets,
     .introContent .contentTop .socials {
       justify-content: space-between;
       align-items: flex-start;
-    }
+    } */
 
     .jobContent .contentBottom .quote {
       text-align: center;

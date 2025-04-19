@@ -13,6 +13,7 @@ export const headerFade = (target: string | HTMLElement | null) => {
   gsap.fromTo(target, { opacity: 0 }, { opacity: 1, duration: 2 });
 };
 
+// Slide Up
 gsap.registerPlugin(ScrollTrigger);
 
 export const animateElements = () => {
