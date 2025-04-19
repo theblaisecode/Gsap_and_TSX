@@ -36,7 +36,7 @@ export const animateElements = () => {
       }),
   });
 
-  ScrollTrigger.addEventListener("refreshInit", () =>
-    gsap.set(".animate", { autoAlpha: 1, y: 0 })
-  );
+  ScrollTrigger.addEventListener("refreshInit", () => {
+    gsap.set(".animate", { autoAlpha: 1, y: 0 });
+  });
 };
