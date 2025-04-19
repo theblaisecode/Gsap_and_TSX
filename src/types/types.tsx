@@ -5,6 +5,15 @@ export type NavLinkType = {
   ariaLabel: string;
 };
 
+export type BtnProps = {
+  visible: boolean;
+};
+
+export type BackToTopButtonProps = {
+  backToTop: boolean;
+  scrollToTop: () => void;
+};
+
 export type TestimonialSettings = {
   dots: boolean;
   infinite: boolean;
@@ -18,7 +27,6 @@ export type TestimonialSettings = {
     settings: Partial<Omit<TestimonialSettings, "responsive">>;
   }[];
 };
-
 
 export type TestimonialType = {
   id: number;
